@@ -1,0 +1,29 @@
+h1 {
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+img {
+    width: 200px;
+    border-radius: 10%;
+}
+
+.categoria {
+    font-size: 40px;
+}
+
+.explicacao {
+    font-size: 14px;
+}
+
+body{
+    background-color: rgb(228, 215, 199);
+}
+
+#titulo {
+    color: rgb(228, 215, 199) ;
+}
+
+
+

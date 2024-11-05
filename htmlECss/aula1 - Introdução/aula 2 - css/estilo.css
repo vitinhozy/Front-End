@@ -1,0 +1,13 @@
+h2{
+    font-size: 4pt;
+}
+
+img {
+    /* largura */
+    width: 400px;
+    /* altura */
+    height: auto;
+    /* arredondamento */
+    border-radius: 100%;
+    border: 5px solid black;
+}
