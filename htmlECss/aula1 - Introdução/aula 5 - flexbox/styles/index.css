@@ -1,0 +1,46 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.pai {
+    width: 200px;
+    height: 300px;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+#pai1 {
+    justify-content: space-around;/*eixo x*/
+    align-items: center;/*eixo y*/
+}
+
+#pai2 {
+    gap: 20px;
+    flex-wrap: wrap;
+    /*row - linha*/
+    /*column - coluna*/
+    flex-direction: row;
+    
+}
+
+.filho {
+    width: 30px;
+    height: 30px;
+}
+
+.f1 {
+    background-color: beige;
+}
+
+.f2 {
+    background-color: brown;
+}
+
+.f3 {
+    background-color: chocolate;
+}
+
+.f4 {
+    background-color: palegreen;
+}
