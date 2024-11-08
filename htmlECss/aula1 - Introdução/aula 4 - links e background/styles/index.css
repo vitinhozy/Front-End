@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(230, 224, 224);
 }
 
 header, footer{
     width: 100%;
-    padding: 40px 0px; /*Lembrar de sempre analisar os tamanhos dos paddings*/
+    padding: 60px 0px; /*Lembrar de sempre analisar os tamanhos dos paddings*/
     background-color: rgb(13, 66, 110);
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,15 +25,14 @@ nav {
     margin-right: 20px;
 }
 
-
 nav a {
     color: white;
     text-decoration: dashed;
 }
 
 #banner {
-    width: 80%;
-    height: 300px;
+    width: 70%;
+    height: 500px;
     /*bg-img - chama a imagem*/
     background-image: url(../images/paisagem3.webp);
     /*bg-size*/
@@ -52,12 +51,30 @@ footer {
     text-align: center;
 }
 
-h1 {
-    margin-left: 20px;
+#quemSomos, #diferencia {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
 }
 
-#quemSomos {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 20px;
+.produto img {
+    width: 100%;
 }
+
+.produto {
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+#catalogo {
+    display: flex;
+    justify-content: center;
+}
+
