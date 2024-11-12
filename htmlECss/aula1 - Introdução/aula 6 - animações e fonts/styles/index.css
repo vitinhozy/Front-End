@@ -1,0 +1,61 @@
+@keyframes animacao {
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+
+    50%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: rgb(0, 133, 250);
+    }
+}
+
+@font-face {
+    font-family: SuperVibes;
+    src: url(../fonts/super_vibes/Super\ Vibes\ -\ \(Demo\)\ hanscostudio.com.ttf);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+h1{
+    font-family: SuperVibes;
+}
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: ind;
+}
+
+#caixa1:hover {
+    transition: 1s;
+    background-color: rgb(92, 76, 107);
+    animation: 1s animacao infinite;
+}
+
+#caixa1{
+    border-radius: 100%;
+    transition: 2s;
+}
+
+#caixa2 {
+    background-color: red;
+    transition: 0,5s;
+}
+
+#caixa2:active{
+    width: 100%;
+    transition: 1s;
+    background-color: azure;
+}
+
+#caixa3 {
+    background-color: gray;
+}
