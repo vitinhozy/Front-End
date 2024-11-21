@@ -1,0 +1,62 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root{
+    --corPrimaria: rgb(100, 156, 201) ;
+    --corSecundaria: rgb(255, 255, 255);
+}
+
+body{
+    background-color: rgb(207, 206, 206);
+}
+
+
+header,footer{
+    width: 100%;
+    background-color: var(--corPrimaria);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#logo{
+    display: flex;
+    gap: 20px;
+}
+
+
+#logo img{
+    width: 30px;
+}
+
+#catalogo{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--corSecundaria);
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.livro{
+    width: 200px;
+    padding: 5px;
+    background-color: var(--corPrimaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+button{
+    display: flex;
+    padding: 5px;
+}
