@@ -14,6 +14,7 @@
 function registrarNome(){
     nome = document.querySelector('#inputNome').value
     document.querySelector('#catalogo').innerHTML =`
-    
+        <div id ="nomeDiv">
+            Eu, ${nome}, sou desenvolvedor.
     `    
 }
