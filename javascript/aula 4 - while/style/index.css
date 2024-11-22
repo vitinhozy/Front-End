@@ -56,6 +56,10 @@ header,footer{
     border-radius: 10px;
 }
 
+.livro img{
+    width: 100%;
+}
+
 button{
     display: flex;
     padding: 5px;
