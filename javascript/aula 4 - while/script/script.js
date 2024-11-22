@@ -1,17 +1,3 @@
-function testes(){
-    contador = 0
-//
-    //while(contador < 3){
-        //alert('Teste!')
-       // contador++
-
-
-       for(var i = 0; i < 3; i++){
-            alert('Testes' + `Fiz ${i} vezes`)
-       }
-}
-//testes()
-
 function carregarCatalogo(){
     var livros = [
         ['images/livros/diarioDeUmBanana.png','DIÁRIO DE UM BANANA',],

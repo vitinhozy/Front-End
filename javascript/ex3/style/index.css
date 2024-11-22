@@ -5,12 +5,12 @@
 }
 
 :root{
-    --corPrimaria: rgb(100, 156, 201) ;
+    --corPrimaria: rgb(161, 165, 230) ;
     --corSecundaria: rgb(255, 255, 255);
 }
 
 body{
-    background-color: rgb(207, 206, 206);
+    background-color: rgb(37, 37, 37);
 }
 
 
@@ -23,11 +23,11 @@ header,footer{
 }
 
 
-
 #logo{
     display: flex;
     gap: 20px;
 }
+
 
 #logo img{
     width: 30px;
@@ -44,7 +44,7 @@ header,footer{
     flex-wrap: wrap;
 }
 
-.livro{
+.filme{
     width: 200px;
     padding: 5px;
     background-color: var(--corPrimaria);
@@ -55,7 +55,7 @@ header,footer{
     border-radius: 10px;
 }
 
-.livro img{
+.filme img{
     width: 100%;
 }
 
