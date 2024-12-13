@@ -1,0 +1,23 @@
+{
+    "usuarios" : [
+        {
+            "nome" : "Victor",
+            "cpf" : "999999999",
+            "senha" : "1234",
+            "endereco" : "Rua blablabla"  
+        },
+        {
+            "nome" : "Tainna",
+            "cpf" : "999999999",
+            "senha" : "1234",
+            "endereco" : "Rua blablabla"  
+        },
+        {
+            "nome" : "Miguel",
+            "cpf" : "999999999",
+            "senha" : "1234",
+            "endereco" : "Rua blablabla"  
+        }
+
+    ]
+}
