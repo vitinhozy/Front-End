@@ -22,7 +22,8 @@ function logar(){
 
             if(login){
                 alert('Login Efetuado com sucesso')
-                window.location = 'https://www.google.com'
+                localStorage.setItem('nome',nome_digitado)
+                window.location = '/home.html'
             }else{
                 document.querySelector("#resposta").innerHTML = "Usuario e senha incorreta"
             }
