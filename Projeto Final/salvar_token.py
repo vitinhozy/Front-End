@@ -14,7 +14,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
                                                scope=SCOPE))
 
 # Substitua com o código de autorização que você obteve na URL
-auth_code = "AQA9-cYdzs59yyl24mQ3j9SS45Cdqdq0tCv6tYTu9SpJFsRBcW_TKTG0Bsuekcu9Is6SThD4TdReHwxcm1nkiCSJk9eQGbTrQiyVeBS8iH8BOT6eI6zFkXGtv6ZJXtVoQP2WYVKrAB8ku1meMZhDNeYETxm1Cb_dMxAmOhTLlUQI2m-8tSSOjIjZqhI"
+auth_code = "AQBEUCxKOeF5qm45se3wkMvphggBYQepocJ3ItuLtkc_s2LoRVxLvXGYDdrNx1LT1lB5_9dOO-IgGscl4kukhxRduy396sYswz-Lbndrm1p2Sdp4A6qZa4-owVm1FXGw8bSaYdv_tg_FpUjK6M3NXPO4t0BeI1nQE4teTjEP66ui_GYIXiwbSxoP_tc"
 
 # Troca o código de autorização por um token de acesso
 token_info = sp.auth_manager.get_access_token(auth_code)

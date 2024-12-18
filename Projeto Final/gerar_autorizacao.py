@@ -20,7 +20,7 @@ auth_url = sp.auth_manager.get_authorize_url()
 print(f"Acesse esse URL para autenticação: {auth_url}")
 
 # Após acessar o URL e autorizar o aplicativo, cole o código de autorização aqui
-auth_code = input("AQA4fN6bDRQKIiKoHXZgZy8JERSoG1uj3gZCS9DEmSm0fwyzOiF5f0O0PaHYRHvh-6yazMacjs_QDI_ZVv6yZOS9e7SKicVpbvy-XS8JwK-NGlmdBfHcEIFabEkRHkMJKCG9_v9cEVdzwbZG0LEJqyVUkB6UF1jbm2qOrycJ6Mn72yfoifIynkFxADQ")
+auth_code = input("AQBhImC2bb0mLrmf_ZBq6CWVQLXChsgl3k6eXdKf-fzYInoJsaAYySdBLR_Uu3qafEe9_-XutlXW8jM2LLGP6lidrRonqqIMMyOFRNlqka75Shn7pAzQuX_eCKF2cCww0TN0gdlBzCd_rqluCwFWAdFCDrmicb9jIxxTjItaU7PQy18kki9GSUYwcZ0")
 
 # Troca o código de autorização por um token de acesso
 token_info = sp.auth_manager.get_access_token(auth_code)

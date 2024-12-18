@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const token = 'BQCZiZuhG5yLZaQRizALyC6wyPf5rmh_BuI--5ar0iZ_4SkX_bsJxFS1w_D4L3b4oRtM1NFbzqQRM4me1H2v3pQtVlW1yKwCV1QxdQMsbymziKA2kcadQ76HoBf9tsaV459TcClM8t14ocC4Sl1wfBWuF3GVg5hS6D-UIT_-kDNYKDeG1tRAesg3ZUYpAvWFvuD6q01utmo9ISJZCEZ5YpgyCA8'; // Substitua com seu token de acesso do Spotify
+    const token = 'BQB3TYCnbaX1CREBjV8ezob80IYXCqnlpyYYB9pjjgV8fmLnS9mKxrCbQKQH0-bulIbtprGv3mj8HeBBUPP0eNCwMxZZHSUrrXb2rPYkU4-IOovKUWsj5w6F9tDWm90xGaCV1pasGLdxtBpwsyluwW4_tAn-uaVJLWn_EJFVOuoPPsUKS0--Zb4JWiSLmnCs6uyckt1FYiyOmCed6gRcjEwrrkc'; // Substitua com seu token de acesso do Spotify
 
     const momentMusicContainer = document.getElementById('moment-music');
     const top50Container = document.getElementById('top-50');
@@ -22,12 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
             displayMusic(data, container);
         } catch (error) {
             console.error('Erro:', error);
+            container.innerHTML = '<p>Erro ao carregar as músicas. Tente novamente mais tarde.</p>';
         }
     };
 
     const displayMusic = (data, container) => {
-        container.innerHTML = ''; 
-        data.tracks.items.forEach(track => {
+        container.innerHTML = ''; // Limpar o conteúdo antes de adicionar novas músicas
+
+        if (!data.items || data.items.length === 0) {
+            container.innerHTML = '<p>Nenhuma música encontrada.</p>';
+            return;
+        }
+
+        data.items.forEach(item => {
+            const track = item.track || item; // Caso o item seja uma playlist, pegamos o track dentro
             const musicCard = document.createElement('div');
             musicCard.classList.add('music-card');
 
@@ -37,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const musicInfo = document.createElement('div');
             musicInfo.classList.add('music-info');
-            
+
             const musicTitle = document.createElement('h3');
             musicTitle.textContent = track.name;
 
@@ -54,11 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // URL para "Top 50 Músicas"
     const top50Url = 'https://api.spotify.com/v1/playlists/1ctvFPKwGHqxo40CQnaILl/tracks'; 
     fetchMusic(top50Url, top50Container);
 
-    // URL para buscar músicas do momento
-    const momentMusicUrl = 'https://api.spotify.com/v1/browse/featured-playlists'; 
+    // URL para buscar "Músicas do Momento" (substitua com um ID real)
+    const momentMusicUrl = 'https://api.spotify.com/v1/playlists/2amY8IJKCKQ1v5kI3VOEzO/tracks'; // Substitua {playlist_id} pelo ID correto
     fetchMusic(momentMusicUrl, momentMusicContainer);
 });
 
@@ -71,4 +80,3 @@ document.getElementById('search-form').addEventListener('submit', function(event
         window.location.href = `search-results.html?query=${encodeURIComponent(searchQuery)}`;
     }
 });
-

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const token = 'BQCZiZuhG5yLZaQRizALyC6wyPf5rmh_BuI--5ar0iZ_4SkX_bsJxFS1w_D4L3b4oRtM1NFbzqQRM4me1H2v3pQtVlW1yKwCV1QxdQMsbymziKA2kcadQ76HoBf9tsaV459TcClM8t14ocC4Sl1wfBWuF3GVg5hS6D-UIT_-kDNYKDeG1tRAesg3ZUYpAvWFvuD6q01utmo9ISJZCEZ5YpgyCA8'; // Substitua com seu token de acesso do Spotify
+    const token = 'BQB3TYCnbaX1CREBjV8ezob80IYXCqnlpyYYB9pjjgV8fmLnS9mKxrCbQKQH0-bulIbtprGv3mj8HeBBUPP0eNCwMxZZHSUrrXb2rPYkU4-IOovKUWsj5w6F9tDWm90xGaCV1pasGLdxtBpwsyluwW4_tAn-uaVJLWn_EJFVOuoPPsUKS0--Zb4JWiSLmnCs6uyckt1FYiyOmCed6gRcjEwrrkc'; // Substitua com seu token de acesso do Spotify
 
     // Recupera o termo de pesquisa da URL
     const params = new URLSearchParams(window.location.search);
